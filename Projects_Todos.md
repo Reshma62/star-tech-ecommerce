@@ -19,8 +19,8 @@
   *2*. - [x] Link to the main index file
 
 ---
- ## 3. First make a auth ✅
-  1. Now work on registation controller
+ ## 3. First make a auth
+  1. Now work on registation controller ✅
      1. - [x] make a models called user
      2. - [x] make api routes for registation
      3. - [x] in controller make valid all input field
