@@ -88,8 +88,19 @@ const otpMatchController = async (req, res) => {
   }
 };
 
-const loginController = (req, res) => {
-  res.send({ success: "Login in success" });
+const loginController = async (req, res) => {
+  const { email, password } = req.body;
+  let existingUser = await User.find({ email });
+  if (existingUser.length > 0) {
+    if (
+      email == existingUser[0].email &&
+      password == existingUser[0].password
+    ) {
+      return res.send({ success: "Login in success" });
+    } else {
+      return res.send({ error: "Credintial not matched" });
+    }
+  }
 };
 
 module.exports = { registationController, otpMatchController, loginController };

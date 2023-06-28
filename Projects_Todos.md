@@ -38,9 +38,11 @@
    // email Regax code in js
    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) // output : true or false
    ```
+ **Make it live in reder.com** [render.com](https://dashboard.render.com/web/srv-cidiof5gkuvncfchcrs0/events)
 
+  **[to fix the version problem in render.com](https://render.com/docs/node-version?fbclid=IwAR31cyRpOP63v4jlOsYMnVJ_URY8k2LEnJhoSL_o88AVLoMl8A7v8_EFzF4)**
   2. Now work on login contoller
-     1. match in existing user email and pass
-     2. invalid info throw an error
-     3. also check all input validation
+     1. - [] match in existing user email and pass
+     2. - [] invalid info throw an error
+     3. - [] also check all input validation
      4.
