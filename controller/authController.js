@@ -90,15 +90,28 @@ const otpMatchController = async (req, res) => {
 
 const loginController = async (req, res) => {
   const { email, password } = req.body;
-  let existingUser = await User.find({ email });
-  if (existingUser.length > 0) {
-    if (
-      email == existingUser[0].email &&
-      password == existingUser[0].password
-    ) {
-      return res.send({ success: "Login in success" });
-    } else {
-      return res.send({ error: "Credintial not matched" });
+  if (!email) {
+    console.log("email");
+    return res.send( { error: "Email is required" } );
+  } else if (emailValidation(email)) {
+    return res.send({ error: "Email is invalid" });
+  } else if (!password) {
+    return res.send({ error: "Password is required" });
+  } else {
+    let existingUser = await User.find({ email });
+    if (existingUser.length > 0) {
+      if (
+        email == existingUser[0].email &&
+        password == existingUser[0].password
+      ) {
+        return res.send({
+          success: "Login in success",
+          username: existingUser[0].fullName,
+          useremail: existingUser[0].email,
+        });
+      } else {
+        return res.send({ error: "Credintial not matched" });
+      }
     }
   }
 };
