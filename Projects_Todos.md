@@ -28,7 +28,7 @@ the main index file
 
 ---
 
-## 3. First make a auth
+## 3. First make a auth ✅
 
 1. Now work on registation controller ✅
 
@@ -64,18 +64,18 @@ if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) // output : tru
     4. - [x] compare the password from bycrypt
     5. - [x] send success message
 
-## Now move to category part
-  1. - [] create category and subcategory models
-  2. - [] create category and subcategory routes and controller
-  3. - [] only one unique name is required for one category
-  4. - [] check duplicate category
-  5. - [] models  structure ![model.png]
-  6. - [] save it database
-  7.  Category status check -> admin status check korbe or update korbe
-      1.  name , status ==> status == approved , isactive:true, otherwise false
-  8. same as sub category
-  9. when sub category created done push it category in subcategory
-  10. now get all category and sub from database eith sub category
+## Now move to category part ✅
+  1. - [x] create category and subcategory models
+  2. - [x] create category and subcategory routes and controller
+  3. - [x] only one unique name is required for one category
+  4. - [x] check duplicate category
+  5. - [x] models  structure ![model.png]
+  6. - [x] save it database
+  7. - [x] Category status check -> admin status check korbe or update korbe
+      1. - [x] name , status ==> status == approved , isactive:true, otherwise false
+  8. - [x] same as sub category
+  9. - [x] when sub category created done push it category in subcategory
+  10. - [x] now get all category and sub from database eith sub category
 
 ## Now create Merchant and store
   1. create model for merchate
