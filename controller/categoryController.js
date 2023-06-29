@@ -1,6 +1,6 @@
 const Category = require("../models/categoryModels");
 const SubCategory = require("../models/subCategory");
-const User = require("../models/userModels");
+
 
 const createCategoryController = async (req, res) => {
   const { name, description } = req.body;

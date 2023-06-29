@@ -77,17 +77,17 @@ if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) // output : tru
   9. - [x] when sub category created done push it category in subcategory
   10. - [x] now get all category and sub from database eith sub category
 
-## Now create Merchant and store
+## Now create Merchant and store ✅
   1. create model for merchate
   2. create route and controller for become merchant
   3. schema name will be a store
-     1. storename, officalemail, officalphone, address, store,owner-> comes from usersmodel
+     1. storename, officalemail, officalphone, address, store,`owner-> comes from usersmodel`
   4. input validation and check duplicate store and email one owner create multipal shop but different email
-  5. after become merchant update the user role
+  5. after become merchant update the `user role`
   6. Store e kisu thakle update hobe na hole update hobe na sir k ask korte hove
-  7. Merchant status approved rejected
+  7. Merchant status approved rejected waiting check
 
-## Now create product
+## Now create product 
   1. create product route and controller and schema
   2. now secure the product
      1. req,res, next ==> its work in a `middleware`
